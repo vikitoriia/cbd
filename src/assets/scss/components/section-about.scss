@@ -1,0 +1,116 @@
+.ba-section-about{
+	background: #f7f8f3;
+	padding: 40px 0;
+
+	@include breakpoint(large){
+		padding: 100px 0;		
+	}
+
+	.ba-about{
+		text-align: center;
+		background: url(../img/about-bg.png) no-repeat 50%;
+		margin-bottom: 120px;
+		padding: 40px;
+
+		.ba-title{
+			color: #1c1c1b;
+			font-family: Oswald;
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 4.8px;
+		}
+	}
+
+	.ba-nav{
+		.ba-menu{
+			list-style: none;
+			display: flex;
+			align-items: center;
+			border-bottom: 2px solid #ced6af;
+			li + li{
+				margin-left: 30px;
+
+				@include breakpoint(large){
+					margin-left: 100px;				
+				}
+			}
+			.ba-nav__item{
+
+				&.is-active{
+					border-bottom: 2px solid #1c1c1b;
+				}
+
+				.tab-item{
+					color: #1c1c1b;
+					font-family: Oswald;
+					font-size: 16px;
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 6px;
+					padding: 0 0 2px 0;
+
+					@include breakpoint(large){
+						color: #1c1c1b;
+						font-family: Oswald;
+						font-size: 30px;
+						font-weight: 400;
+						text-transform: uppercase;
+						letter-spacing: 6px;
+						padding: 0 0 2px 0;
+					}
+
+					&:hover{
+						border-bottom: 2px solid #1c1c1b;
+					}
+				 }
+			}			 	 	
+		}
+	}
+
+	.ba-info-bar{
+		margin-top: 30px;
+		@include breakpoint(large){
+			margin-top: 70px;
+		}
+		.ba-post-text{
+			align-items: center;
+		}
+		.ba-title{
+			color: #000000;
+			font-family: Oswald;
+			font-size: 20px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 4.8px;
+
+			@include breakpoint(large){
+				color: #000000;
+				font-family: Oswald;
+				font-size: 24px;
+				font-weight: 400;
+				text-transform: uppercase;
+				letter-spacing: 4.8px;
+			}
+		}
+
+		.ba-subtitle{
+			color: #6e774a;
+			font-family: Oswald;
+			font-size: 16px;
+			font-weight: 300;
+			line-height: 2;
+			letter-spacing: 0.72px;
+
+			@include breakpoint(large){
+				font-size: 18px;	
+			}
+		}
+
+		.ba-gallery{
+			img + img{
+				margin-top: 15px;
+			}
+		}
+	}
+}

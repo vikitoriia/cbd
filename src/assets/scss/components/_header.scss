@@ -1,0 +1,45 @@
+.ba-header{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 10;
+	padding: 10px 0;
+
+	&-position{
+		justify-content: space-between;
+	}
+
+	.ba-main-menu{
+		li + li{
+			margin-left: 10px;
+		}
+
+		a{
+			color: $white;
+			font-family: Oswald;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 14.375;
+			text-transform: uppercase;
+			letter-spacing: 0.96px;
+			
+			&:hover{
+				&::after{
+					content: "";
+					display: block;
+					width: 55px;
+					height: 2px;
+					background-color: #9db892;
+				}
+			}
+		}
+	}
+	.off-canvas{
+		.menu{
+			a{
+				padding: 10px;
+			}
+		}
+	}
+}

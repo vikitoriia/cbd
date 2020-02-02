@@ -1,0 +1,143 @@
+.ba-section-intro{
+	background: #000 url(../img/intro-bg.jpg) 50% no-repeat;
+	background-size: cover;
+	padding: 60px 0 280px;
+	text-align: left;
+	position: relative;
+
+	@include breakpoint(large){
+		padding: 320px 0 330px;
+		text-align: right;
+	}
+
+	@include breakpoint(medium){
+		padding: 320px 0 430px;
+		text-align: right;
+	}
+
+	.ba-title{
+		text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+		color: #f7f8f3;
+		font-family: Oswald;
+		font-size: 40px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+
+		@include breakpoint(large){
+			text-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+			color: #f7f8f3;
+			font-family: Oswald;
+			font-size: 55px;
+			font-weight: 400;
+			text-transform: uppercase;
+			letter-spacing: 15.4px;
+			text-align: right;
+		}
+	}
+	.ba-subtitle{
+		color: #f7f8f3;
+		font-family: Oswald;
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 6.72px;
+		text-align: center;
+
+		@include breakpoint(large){
+			color: #f7f8f3;
+			font-family: Oswald;
+			font-size: 24px;
+			font-weight: 300;
+			letter-spacing: 6.72px;
+			text-align: right;
+		}
+	}
+
+	.ba-start-shoping{
+		margin-left: auto;
+		// height: 70px;
+		display: block;
+		width: 230px;
+		color: #ffffff;
+		font-family: Oswald;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 1.6;
+		text-transform: uppercase;
+		border: 1px solid rgba(#fff, 0.4);
+		text-align: center;
+		padding: 15px 25px;
+		margin-bottom: 30px;
+
+		&::after{
+			content: "";
+			width: 35px;
+			height: 2px;
+			display: inline-block;
+			background: #fff;
+			margin: 7px 0 7px 10px ;
+		}
+
+		&:hover{
+			border: 1px solid #9db892;
+
+			&:after{
+				background: #9db892;
+			}
+		}
+	}
+
+	.ba-see-products{
+		color: #f7f8f3;
+		font-family: Oswald;
+		font-size: 18px;
+		font-weight: 300;
+		letter-spacing: 5.04px;
+
+		&:hover{
+			svg{
+				transform: translateX(10px);
+			}
+		}
+	}
+
+	.ba-scroll{
+		position: absolute;
+		display: block;
+		width: 30px;
+		height: 16px;
+		background: url(../img/scroll.svg) no-repeat 50%;
+		margin: 0 auto;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+
+		&:hover{
+			height: 20px;
+		}
+	}
+
+	.ba-intro-decor{
+		@include breakpoint(large){
+			color: #ffffff;
+		font-family: Oswald;
+		font-size: 26px;
+		font-weight: 400;
+		text-transform: uppercase;
+		letter-spacing: 2.08px;
+		position: absolute;
+		transform: rotate(-90deg);
+		bottom: 134px;
+		left: -125px;
+
+		&:before{
+			content: "";
+			display: inline-block;
+			width: 107px;
+			height: 2px;
+			background-color: #f7f8f3;
+			margin: 0 20px 10px;
+		}
+		}
+	}
+}
