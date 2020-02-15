@@ -33,7 +33,7 @@
 // @include foundation-tooltip;
 
 // Containers
-// @include foundation-accordion;
+@include foundation-accordion;
 // @include foundation-media-object;
 // @include foundation-orbit;
 @include foundation-responsive-embed;
@@ -72,3 +72,5 @@
 @import "components/section-intro.scss";
 @import "components/section-about.scss";
 @import "components/section-products.scss";
+@import "components/section-answer.scss";
+@import "components/section-feedback.scss";

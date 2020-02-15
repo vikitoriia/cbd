@@ -12,7 +12,7 @@ import { MediaQuery } from 'foundation-sites/js/foundation.util.mediaQuery';
 // import { Touch } from 'foundation-sites/js/foundation.util.touch';
 import { Triggers } from 'foundation-sites/js/foundation.util.triggers';
 // import { Abide } from 'foundation-sites/js/foundation.abide';
-// import { Accordion } from 'foundation-sites/js/foundation.accordion';
+import { Accordion } from 'foundation-sites/js/foundation.accordion';
 // import { AccordionMenu } from 'foundation-sites/js/foundation.accordionMenu';
 // import { Drilldown } from 'foundation-sites/js/foundation.drilldown';
 // import { Dropdown } from 'foundation-sites/js/foundation.dropdown';
@@ -31,7 +31,7 @@ import { Slider } from 'foundation-sites/js/foundation.slider';
 import { Tabs } from 'foundation-sites/js/foundation.tabs';
 // import { Toggler } from 'foundation-sites/js/foundation.toggler';
 // import { Tooltip } from 'foundation-sites/js/foundation.tooltip';
-// import { ResponsiveAccordionTabs } from 'foundation-sites/js/foundation.responsiveAccordionTabs';
+import { ResponsiveAccordionTabs } from 'foundation-sites/js/foundation.responsiveAccordionTabs';
 
 Foundation.addToJquery($);
 
@@ -59,7 +59,7 @@ Triggers.init($, Foundation);
 MediaQuery._init();
 
 // Foundation.plugin(Abide, 'Abide');
-// Foundation.plugin(Accordion, 'Accordion');
+Foundation.plugin(Accordion, 'Accordion');
 // Foundation.plugin(AccordionMenu, 'AccordionMenu');
 // Foundation.plugin(Drilldown, 'Drilldown');
 // Foundation.plugin(Dropdown, 'Dropdown');
@@ -78,6 +78,6 @@ Foundation.plugin(Slider, 'Slider');
 Foundation.plugin(Tabs, 'Tabs');
 // Foundation.plugin(Toggler, 'Toggler');
 // Foundation.plugin(Tooltip, 'Tooltip');
-// Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
+Foundation.plugin(ResponsiveAccordionTabs, 'ResponsiveAccordionTabs');
 
 export { Foundation };

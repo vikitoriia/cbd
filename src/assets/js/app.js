@@ -30,17 +30,17 @@ sliderNew.slick({
 		{
 		  breakpoint: 1024,
 		  settings: {
-			 slidesToShow: 3,
-			 slidesToScroll: 3,
+			 slidesToShow: 1,
+			 slidesToScroll: 1,
 			 infinite: true,
-			 dots: true
+			 dots: false
 		  }
 		},
 		{
 		  breakpoint: 600,
 		  settings: {
-			 slidesToShow: 2,
-			 slidesToScroll: 2
+			 slidesToShow: 1,
+			 slidesToScroll: 1
 		  }
 		},
 		{
@@ -50,7 +50,41 @@ sliderNew.slick({
 			 slidesToScroll: 1
 		  }
 		}
-		
 	 ]
-	
+});
+
+let sliderFeedback = $('.ba-slider-feedback');
+
+sliderFeedback.slick({
+	slidesToShow: 1,
+  	slidesToScroll: 1,
+	dots: false,
+	arrows: true,
+	nextArrow: '.ba-slide-next',
+	prevArrow: '.ba-slide-previous',
+	responsive: [
+		{
+		  breakpoint: 1024,
+		  settings: {
+			 slidesToShow: 1,
+			 slidesToScroll: 1,
+			 infinite: true,
+			 dots: false
+		  }
+		},
+		{
+		  breakpoint: 600,
+		  settings: {
+			 slidesToShow: 1,
+			 slidesToScroll: 1
+		  }
+		},
+		{
+		  breakpoint: 480,
+		  settings: {
+			 slidesToShow: 1,
+			 slidesToScroll: 1
+		  }
+		}
+	 ]
 })

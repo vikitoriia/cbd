@@ -1,5 +1,10 @@
 .ba-section-products{
 	background: #f7f8f3;
+	padding: 50px 0 50px;
+
+	@include breakpoint(large){
+		padding: 100px 0 70px;
+	}
 
 	.ba-title{
 		color: #1c1c1b;
@@ -17,9 +22,12 @@
 		border: 1px solid #6e774a; 
 		text-align: center;
 		padding: 38px 10px;
+		height: 430px;
+		max-width: 613px;
 		
 		.ba-rating{
 			color: #6e774a;
+			margin-bottom: 5px;
 		}
 
 		.ba-name{
@@ -29,6 +37,7 @@
 			font-weight: 400;
 			text-transform: uppercase;
 			letter-spacing: 2.7px;
+			margin-bottom: 30px;
 		}
 
 		img{
@@ -47,23 +56,36 @@
 			font-weight: 400;
 			text-transform: uppercase;
 			background-color: #efefef;
-			padding: 15px 230px 15px 30px;
+			padding: 15px 0 15px 30px;
+			width: 425px;
 		}
 
 		button{
 			background-color: #6e774a;
-			padding: 15px 10px 15px 90px;
+			padding: 15px 10px 15px 10px;
+			text-align: left;
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			width: 190px;
+ 
+			&:hover{
+				background: rgba( #6e774a, 0.6);
+			}
 		}
 	}
 
 	.ba-slider-new-item {
 		padding-left: 10px;
 		padding-right: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 40px;
 	}
 
 	.ba-slide-nav{
 		text-align: center;
-	}
 
+		button + button{
+			margin-left: 10px;
+		}
+	}
 }

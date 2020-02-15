@@ -1,24 +1,24 @@
 <header class="ba-header">
 		<div class="row shrink align-middle space-between ba-header-position">
 			<div>
-				<button class="menu-icon dark hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
+				<button class="menu-icon light hide-for-medium" type="button" data-open="offCanvas" aria-label="Show menu">
 				</button>
 				<ul class="menu ba-main-menu show-for-medium">
 					<li {{#ifpage 'index'}} class="active" {{/ifpage}}><a href="index.html">Home</a></li>
 					<li><a href="#products">Products</a></li>
-					<li><a href="FAQs"></a></li>
+					<li><a href="#faqs">Faqs</a></li>
 					<li><a href="#contact">Contact Us</a></li>
-				</ul>
+				</ul> 
 			</div>
 
-			<div>
+			<div class="ba-logo">
 				<a href="#">
-					<img src="{{root}}assets/img/logo.svg" alt="Logo">
+					<img src="{{root}}assets/img/logo.png" alt="Logo">
 				</a>
 			</div>
 			<!-- /.column -->
 
-			<div>
+			<div class="ba-prof hide-for-small-only">
 				<a href="#login">login</a>
 				<a href="#search">Search</a>
 				<a href="#cart">Cart (0)</a>
